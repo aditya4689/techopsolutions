@@ -160,9 +160,11 @@
         if (st > lastScrollTop) {
           // Scrolling down, hide the navbar
           $('.navbar').addClass('navbar-hidden');
+          $('.jumbotron').addClass('hide-header');
         } else {
           // Scrolling up, show the navbar
           $('.navbar').removeClass('navbar-hidden');
+          $('.jumbotron').removeClass('hide-header');
         }
 
         lastScrollTop = st;
